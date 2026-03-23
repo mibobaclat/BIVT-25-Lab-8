@@ -12,9 +12,9 @@ namespace Lab8.Green
             private int[] _marks;
             private int _markCounter;
 
-            public string Name => _name ?? string.Empty;
-            public string Surname => _surname ?? string.Empty;
-            public int[] Marks => _marks?.ToArray() ?? new int[0];
+            public string Name => _name;
+            public string Surname => _surname;
+            public int[] Marks => _marks?.ToArray();
 
             public double AverageMark
             {
@@ -34,8 +34,8 @@ namespace Lab8.Green
 
             public Student(string name, string surname)
             {
-                _name = name ?? throw new ArgumentNullException(nameof(name));
-                _surname = surname ?? throw new ArgumentNullException(nameof(surname));
+                _name = name;
+                _surname = surname;
                 _marks = new int[5];
                 _markCounter = 0;
             }
