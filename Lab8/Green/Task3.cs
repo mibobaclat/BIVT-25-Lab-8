@@ -119,8 +119,7 @@ namespace Lab8.Green
                 {
                     for (int j = 0; j < students.Length - 1 - i; j++)
                     {
-                        if (students[j] != null && students[j + 1] != null &&
-                            students[j].ID > students[j + 1].ID)
+                        if (students[j] != null && students[j + 1] != null && students[j].ID > students[j + 1].ID)
                         {
                             Student temp = students[j];
                             students[j] = students[j + 1];
